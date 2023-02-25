@@ -1,0 +1,19 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  gap: 1px;
+  margin: 50px auto;
+  width: 960px;
+  height: 960px;
+  border: 1px solid black;
+}
+
+.container > div {
+  background-color: white;
+  transition: background-color 0.2s ease;
+}
+
+.container > div:hover {
+  background-color: black;
+}
